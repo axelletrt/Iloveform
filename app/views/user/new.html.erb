@@ -21,15 +21,25 @@
 <%= submit_tag "Soumettre mon formulaire" %>
 <% end %> -->
 
-<h1>Bonjour visiteuse/ visiteur, merci de remplir ton nom, ton email et dis moi ce que tu fais dans la vie :)</h1>
-<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
 
+<div class = "container"
+<h1>Bonjour visiteuse/ visiteur, merci de remplir ton nom, ton email et dis moi ce que tu fais dans la vie :)</h1>
+<%= form_for @user, url: {action: "create"} do |f| %>
     <br> Nom: <%= f.text_field :username %></br>
     <br> Email: <%= f.text_field :email %></br>
      <br>Bio:</br>  
     <br><%= f.text_area :bio, size: "60x12" %></br> 
     <%= f.submit "Soumettre mon formulaire" %>
 <% end %>
+</div> 
+
+
+
+
+
+
+
+
 
 
 
